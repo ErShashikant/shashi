@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Calculator
+        </title>
+        <style>
+            .main{
+                width: 80px;
+                height: 25px;
+               background-color: rgb(18, 173, 44); 
+            }
+        </style>
+    </head>
+    <body>
+        <input type="number" name="first" id="first" step="any" />
+        <select id="ope">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="second" name="second" id="second" />
+        <br/>
+        <button onclick="cal()" class="main">
+            Calculate
+        </button>
+        <input type="text"  name="" id="res" reandomly="" />
+    </body>
+    <script type="text/javascript">
+        function cal(){
+            var opr1 = document.getElementById('first').value;
+    var opr2 = document.getElementById('second').value;
+    //alert (opr1);
+    //alert(opr2);
+    var ope = document.getElementById('ope').value;
+    if(ope=='+'){
+        var res = parseInt(opr1)+ parseInt(opr2);
+    }
+    if(ope=='-'){
+        var res = parseInt(opr1)- parseInt(opr2);
+    }
+    if(ope=='*'){
+        var res = parseInt(opr1)*parseInt(opr2);
+    }
+    if(ope=='/'){
+        var res = parseInt(opr1)/parseInt(opr2);
+    }
+  document.getElementById('res').value = res;
+        }
+    </script>
+  
+</html>
