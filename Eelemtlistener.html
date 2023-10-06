@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <script type="text/javascript">
+ var i = 0;
+ document.getElementById('btn').addEventListener("click",function(){
+   document.getElementById('counter').innerText=i; 
+   i++;
+ })
+ document.getElementById('btn')
+ .addEventListener("mouseenter",colorChange);
+ function colorChange(){
+    document.getElementById('counter').style.
+    background = "red";
+ }
+
+    </script>
+    <body>
+      <div id="counter"></div>
+      <button id="btn">Click Me</button>
+    </body>
+</html>

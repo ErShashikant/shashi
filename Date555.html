@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+ forEach loop
+        </title>
+    </head>
+    <body onload="showTime()"> 
+    <h1>
+
+    </h1>
+    </body>
+    <script>
+       function showTime(){
+        var d = new Date();
+        var h = d.getHours();
+        var m = d.getMinutes();
+        var s = d.getSeconds();
+        var time = h + ":" + m + ":"+ s;
+        document.getElementByTagname('h1')[0].innerText=time;
+        setTimeout(showTime,1000);
+       }
+    </script>
+</html>
